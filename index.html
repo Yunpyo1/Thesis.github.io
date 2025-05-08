@@ -36,7 +36,7 @@
         }
         .content h2 {
             color: #1A365D;
-            text-align: center;
+            text-align: left;
             border-bottom: 3px solid #1A365D;
             padding-bottom: 5px 
         }
@@ -183,6 +183,7 @@
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#data-tables">Data Tables</a></li>
                 <li><a href="#survey">Survey</a></li>
+                <li><a href="#results">Results</a></li>
                 <li><a href="#discussion">Discussion</a></li>
                 <li><a href="#link">Link</a></li>
             </ul>
@@ -206,6 +207,7 @@
             </section>
             
             <section id="introduction-section" class="section">
+                <h2>Introduction</h2>
                 <style>
                     .summary-section body {
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -322,11 +324,41 @@
             </section>
             
             <section id="literature-review-section" class="section">
+                <style>
+                    #literature-review-section p {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 18px;
+                    }
+                    #literature-review-section h3{
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                </style>
+                <h2>Literature Review</h2>
 
-                <p>Literature review content goes here...</p>
+                <h3>Stock Market Participation</h3>
+                <p>Economic theory suggests individuals should invest in risky assets like stocks due to the equity premium and long-term returns. However, empirical studies show persistent low participation, known as the "stock market participation puzzle". Recent research has shifted focus from economic to behavioral and cultural explanations.</p>
+            
+                <h3>Individualism and Social Conformity</h3>
+                <p>Contrary to the assumption that individualism and social conformity are opposites, some literature finds that individualistic individuals may still exhibit conformity due to social capital and prosocial behavior. The relationship is complex and non-linear.</p>
+            
+                <h3>Individualism and Overconfidence/Optimism</h3>
+                <p>Extensive evidence links individualism with overconfidence and optimism. Individuals from individualistic cultures tend to rate their abilities more highly and display greater belief in favorable outcomes, potentially affecting financial decision-making.</p>
+            
+                <h3>Individualism and Financial Literacy</h3>
+                <p>Research is mixed: some studies argue that individualism encourages self-responsibility and thus higher financial literacy, while others suggest overconfidence may reduce the desire to seek financial education, leading to lower literacy levels.</p>
+            
+                <h3>Individualism and Trust</h3>
+                <p>Studies show conflicting results. Some argue individualism fosters broader trust networks (generalized trust), while others note that it may erode communal bonds, reducing trust in others. However, individualism often correlates positively with institutional trust.</p>
+            
+                <h3>Individualism and Stock Market Participation</h3>
+                <p>Studies like Chui et al. (2010) and Breuer et al. (2012) found a positive link between individualism and market activity. However, they often treat overconfidence and optimism as proxies, without fully accounting for other mediators like trust and literacy.</p>
+            
+                <p>The current study seeks to address gaps by incorporating all these mediating variables to assess the comprehensive effect of individualism on stock market participation.</p>
+            
             </section>
             
             <section id="methodology-section" class="section">
+                <h2> Methodology</h2>
                 <style>      
                     .methodology-section body {
                         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1635,18 +1667,452 @@
             </section>
             
             <section id="survey-section" class="section">
-                <h2>Survey</h2>
-                <p>Survey content goes here...</p>
+                <h2>Survey Design</h2>
+                <style>
+                    .survey-section {
+                      margin-bottom: 2rem;
+                      padding: 1rem;
+                      border: 1px solid #ddd;
+                      border-radius: 8px;
+                      background-color: rgb(255, 255, 255);
+                    }
+                
+                    .survey-section h3 {
+                      margin-top: 0;
+                      color: #333;
+                    }
+                
+                    label {
+                      display: block;
+                      margin: 1rem 0 0.25rem;
+                      font-weight: 500;
+                    }
+                
+                    input[type="text"],
+                    input[type="number"] {
+                      width: 100%;
+                      padding: 0.5rem;
+                      font-size: 1rem;
+                      margin-bottom: 1rem;
+                      border-radius: 4px;
+                      border: 1px solid #ccc;
+                    }
+                
+                    .likert-table {
+                      border-collapse: collapse;
+                      width: 100%;
+                      margin-top: 1rem;
+                      table-layout: fixed;
+                    }
+                
+                    .likert-table th,
+                    .likert-table td {
+                      border: 1px solid #ccc;
+                      padding: 0.5rem;
+                      text-align: center;
+                      font-size: 0.875rem;
+                    }
+                
+                    .likert-table th:first-child,
+                    .likert-table td:first-child {
+                      text-align: left;
+                      width: 30%;
+                    }
+                
+                    .radio-group {
+                      margin: 0.5rem 0;
+                    }
+                
+                    .radio-group input {
+                      margin-right: 0.5rem;
+                    }
+                
+                    button[type="submit"] {
+                      background-color: #4CAF50;
+                      color: white;
+                      border: none;
+                      padding: 0.75rem 1.5rem;
+                      font-size: 1rem;
+                      border-radius: 4px;
+                      cursor: pointer;
+                    }
+                
+                    button[type="submit"]:hover {
+                      background-color: #45a049;
+                    }
+                  </style>
+                
+                <form id="surveyForm" action="#" method="POST">
+                    <div class="survey-section">
+                      <h3>Treatment: Singular Pronoun Task</h3>
+                      <p>Last weekend, I planned a trip to the mountains. My goal was to explore a new trail, and I packed
+                        everything carefully. At the same time, we made sure our supplies were ready so the group could
+                        stay organized.</p>
+                        <p>When we arrived, the fresh air and beautiful scenery made us feel energized. I took a deep breath
+                        and appreciated my surroundings. We decided to start hiking right away, excited for our
+                        adventure.</p>
+                        <p>At one point, I felt tired, but my determination kept me moving. Luckily, we encouraged each
+                        other, knowing our teamwork would help us succeed. When we finally reached the top, our
+                        excitement was overwhelming. </p>
+                        <p>As the sun set, we sat together, reflecting on our journey. I thought about my personal growth,
+                        while we also talked about our shared experiences. The trip strengthened both my confidence and
+                        our friendship.
+                      </p>
+                      <label for="pronoun-count">1. How many singular pronouns (I, me, my) are in the text?</label>
+                      <input type="number" id="pronoun-count" name="pronoun_count" min="0" max="100">
+                    </div>
+                
+                    <div class="survey-section"> 
+                      <style>
+                        .likert-table {
+                          border-collapse: collapse;
+                          margin-bottom: 20px;
+                          width: 100%;
+                          table-layout: fixed;
+                        }
+                        .likert-table th, .likert-table td {
+                          padding: 3px;
+                          font-size: small;
+                          text-align: center;
+                          border: 1px solid #ccc;
+                          width: 12.5%%;
+                          word-wrap: break-word;
+                        }
+                        .likert-table th:first-child, .likert-table td:first-child {
+                          text-align: left;
+                          width: 20%;
+                        }
+                      </style>
+                      
+                      <div class="survey-section">
+                        <h3>Individualism and Collectivism</h3>
+                      
+                        <table class="likert-table">
+                          <tr>
+                            <th></th>
+                            <th>1<br>Strongly Disagree</th>
+                            <th>2<br>Disagree</th>
+                            <th>3<br>Somewhat Disagree</th>
+                            <th>4<br>Neither Agree nor Disagree</th>
+                            <th>5<br>Somewhat Agree</th>
+                            <th>6<br>Agree</th>
+                            <th>7<br>Strongly Agree</th>
+                          </tr>
+                      
+                          <tr>
+                            <td>My personal identity, independent of others, is very important to me.</td>
+                            <td><input type="radio" name="indiv1" value="1"></td>
+                            <td><input type="radio" name="indiv1" value="2"></td>
+                            <td><input type="radio" name="indiv1" value="3"></td>
+                            <td><input type="radio" name="indiv1" value="4"></td>
+                            <td><input type="radio" name="indiv1" value="5"></td>
+                            <td><input type="radio" name="indiv1" value="6"></td>
+                            <td><input type="radio" name="indiv1" value="7"></td>
+                          </tr>
+                      
+                          <tr>
+                            <td>I take great pride in accomplishing what no one else can accomplish.</td>
+                            <td><input type="radio" name="indiv2" value="1"></td>
+                            <td><input type="radio" name="indiv2" value="2"></td>
+                            <td><input type="radio" name="indiv2" value="3"></td>
+                            <td><input type="radio" name="indiv2" value="4"></td>
+                            <td><input type="radio" name="indiv2" value="5"></td>
+                            <td><input type="radio" name="indiv2" value="6"></td>
+                            <td><input type="radio" name="indiv2" value="7"></td>
+                          </tr>
+                      
+                          <tr>
+                            <td>I am a unique person and enjoy myself differently from others.</td>
+                            <td><input type="radio" name="indiv3" value="1"></td>
+                            <td><input type="radio" name="indiv3" value="2"></td>
+                            <td><input type="radio" name="indiv3" value="3"></td>
+                            <td><input type="radio" name="indiv3" value="4"></td>
+                            <td><input type="radio" name="indiv3" value="5"></td>
+                            <td><input type="radio" name="indiv3" value="6"></td>
+                            <td><input type="radio" name="indiv3" value="7"></td>
+                          </tr>
+                      
+                          <tr>
+                            <td>To understand who I am, you must see me with my group.</td>
+                            <td><input type="radio" name="coll1" value="1"></td>
+                            <td><input type="radio" name="coll1" value="2"></td>
+                            <td><input type="radio" name="coll1" value="3"></td>
+                            <td><input type="radio" name="coll1" value="4"></td>
+                            <td><input type="radio" name="coll1" value="5"></td>
+                            <td><input type="radio" name="coll1" value="6"></td>
+                            <td><input type="radio" name="coll1" value="7"></td>
+                          </tr>
+                      
+                          <tr>
+                            <td>My happiness depends on the happiness of those around me.</td>
+                            <td><input type="radio" name="coll2" value="1"></td>
+                            <td><input type="radio" name="coll2" value="2"></td>
+                            <td><input type="radio" name="coll2" value="3"></td>
+                            <td><input type="radio" name="coll2" value="4"></td>
+                            <td><input type="radio" name="coll2" value="5"></td>
+                            <td><input type="radio" name="coll2" value="6"></td>
+                            <td><input type="radio" name="coll2" value="7"></td>
+                          </tr>
+                      
+                          <tr>
+                            <td>I will sacrifice my self-interest for my group’s benefit.</td>
+                            <td><input type="radio" name="coll3" value="1"></td>
+                            <td><input type="radio" name="coll3" value="2"></td>
+                            <td><input type="radio" name="coll3" value="3"></td>
+                            <td><input type="radio" name="coll3" value="4"></td>
+                            <td><input type="radio" name="coll3" value="5"></td>
+                            <td><input type="radio" name="coll3" value="6"></td>
+                            <td><input type="radio" name="coll3" value="7"></td>
+                          </tr>
+                      
+                        </table>
+                      </div>
+                      
+                    </div>
+                
+                    <div class="survey-section">
+                  <h3>Overconfidence and Optimism</h3>
+                
+                  <label>1. How great of an investor are you?</label><br>
+                  <input type="radio" name="investor_self_rating"> Better than average<br>
+                  <input type="radio" name="investor_self_rating"> About the same<br>
+                  <input type="radio" name="investor_self_rating"> Not as good as average<br><br>
+                
+                  <label>2. What will be the group's average return in 3 months?</label><br>
+                  <input type="radio" name="group_return"> Less than $100<br>
+                  <input type="radio" name="group_return" > Around $100<br>
+                  <input type="radio" name="group_return"> Around $110<br>
+                  <input type="radio" name="group_return"> More than $120<br><br>
+                
+                  <label>3. What will be your return in 3 months?</label><br>
+                  <input type="radio" name="your_return"> Less than $100<br>
+                  <input type="radio" name="your_return"> Around $100<br>
+                  <input type="radio" name="your_return"> Around $110<br>
+                  <input type="radio" name="your_return"> More than $120<br>
+                </div>
+                
+                
+                    <div class="survey-section">
+                      <h3>Financial Literacy</h3>
+                      <label>1. Imagine that the interest rate on your savings account was 1% per year and inflation was 2%
+                        per year. After 1 year, how much would you be able to buy with the money in this account?</label>
+                        <input type="radio" name="q1_fint"> More than today<br>
+                        <input type="radio" name="q1_fint"> Exactly the same<br>
+                        <input type="radio" name="q1_fint"> Less than today<br><br>
+                
+                      <label>2. Suppose you put $100 into a savings account with an interest rate of 10% per year. Assuming
+                        you don’t make any further deposits and withdraw any money, what will the balance be in
+                        this account at the end of the first year?
+                        </label>
+                        <input type="radio" name="q2_fint"> More than $110<br>
+                        <input type="radio" name="q2_fint"> Exactly $110<br>
+                        <input type="radio" name="q2_fint">  Less than $100<br><br>
+                
+                      <label>3. How much do you think you would have in the account after 3 years?</label>
+                      <input type="radio" name="q3_fint"> More than $130<br>
+                      <input type="radio" name="q3_fint"> Exactly $130<br>
+                      <input type="radio" name="q3_fint">  Less than $130<br><br>
+                
+                      <label for="confidence">4. How confident are you that your answers to the previous three questions are correct? Please
+                        provide a percentage from 0 to 100%. (%):</label>
+                      <input type="number" id="confidence" name="confidence" min="0" max="100">
+                    </div>
+                
+                    <div class="survey-section">
+                      <h3>Trust</h3>
+                      <label>1. Generally speaking, would you say that most people can be trusted or that you need to be
+                        very careful in dealing with people?</label>
+                        <input type="radio" name="gentrust1"> Most people can be trusted<br>
+                        <input type="radio" name="gentrust1"> Need to be very careful<br>
+                
+                      <label>2. Would you say that most of the time, people try to be helpful, or that they are mostly just
+                        looking out for themselves?</label>
+                        <input type="radio" name="gentrust2"> Try to be helpful<br>
+                        <input type="radio" name="gentrust2"> Look out for themselves<br>
+                
+                      <label>3. In the U.S., my interests are protected by:</label>
+                      <div>
+                        <table class="survey-section">
+                            <tr>
+                                <th></th>
+                                <th>1<br>Strongly Disagree</th>
+                                <th>2<br>Disagree</th>
+                                <th>3<br>Somewhat Disagree</th>
+                                <th>4<br>Neither Agree nor Disagree</th>
+                                <th>5<br>Somewhat Agree</th>
+                                <th>6<br>Agree</th>
+                                <th>7<br>Strongly Agree</th>
+                              </tr>
+                            <tr>
+                                <td>Financial Institutions or Banks</td>
+                                <td><input type="radio" name="instrust1" value="1"></td>
+                                <td><input type="radio" name="instrust1" value="2"></td>
+                                <td><input type="radio" name="instrust1" value="3"></td>
+                                <td><input type="radio" name="instrust1" value="4"></td>
+                                <td><input type="radio" name="instrust1" value="5"></td>
+                                <td><input type="radio" name="instrust1" value="6"></td>
+                                <td><input type="radio" name="instrust1" value="7"></td>
+                            </tr>
+                            <tr>
+                                <td>Legal System</td>
+                                <td><input type="radio" name="instrust2" value="1"></td>
+                                <td><input type="radio" name="instrust2" value="2"></td>
+                                <td><input type="radio" name="instrust2" value="3"></td>
+                                <td><input type="radio" name="instrust2" value="4"></td>
+                                <td><input type="radio" name="instrust2" value="5"></td>
+                                <td><input type="radio" name="instrust2" value="6"></td>
+                                <td><input type="radio" name="instrust2" value="7"></td>
+                            </tr>
+                            <tr>
+                                <td>Government</td>
+                                <td><input type="radio" name="instrust3" value="1"></td>
+                                <td><input type="radio" name="instrust3" value="2"></td>
+                                <td><input type="radio" name="instrust3" value="3"></td>
+                                <td><input type="radio" name="instrust3" value="4"></td>
+                                <td><input type="radio" name="instrust3" value="5"></td>
+                                <td><input type="radio" name="instrust3" value="6"></td>
+                                <td><input type="radio" name="instrust3" value="7"></td>
+                            </tr>
+                            <tr>
+                                <td>News Media</td>
+                                <td><input type="radio" name="instrust4" value="1"></td>
+                                <td><input type="radio" name="instrust4" value="2"></td>
+                                <td><input type="radio" name="instrust4" value="3"></td>
+                                <td><input type="radio" name="instrust4" value="4"></td>
+                                <td><input type="radio" name="instrust4" value="5"></td>
+                                <td><input type="radio" name="instrust4" value="6"></td>
+                                <td><input type="radio" name="instrust4" value="7"></td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <div class="survey-section">
+                      <h3>Social Conformity</h3>
+                      <div>
+                        <table class="likert-table">
+                            <tr>
+                                <th></th>
+                                <th>1<br>Strongly Disagree</th>
+                                <th>2<br>Disagree</th>
+                                <th>3<br>Somewhat Disagree</th>
+                                <th>4<br>Neither Agree nor Disagree</th>
+                                <th>5<br>Somewhat Agree</th>
+                                <th>6<br>Agree</th>
+                                <th>7<br>Strongly Agree</th>
+                              </tr>
+                            <tr>
+                                <td> Before making a decision, I always consult with others. It is important for me to respect
+                                advice and decisions made by others.</td>
+                                <td><input type="radio" name="socon1" value="1"></td>
+                                <td><input type="radio" name="socon1" value="2"></td>
+                                <td><input type="radio" name="socon1" value="3"></td>
+                                <td><input type="radio" name="socon1" value="4"></td>
+                                <td><input type="radio" name="socon1" value="5"></td>
+                                <td><input type="radio" name="socon1" value="6"></td>
+                                <td><input type="radio" name="socon1" value="7"></td>
+                            </tr>
+                            <tr>
+                                <td> If someone is very persuasive, I tend to change my opinion and go along with them.</td>
+                                <td><input type="radio" name="socon2" value="1"></td>
+                                <td><input type="radio" name="socon2" value="2"></td>
+                                <td><input type="radio" name="socon2" value="3"></td>
+                                <td><input type="radio" name="socon2" value="4"></td>
+                                <td><input type="radio" name="socon2" value="5"></td>
+                                <td><input type="radio" name="socon2" value="6"></td>
+                                <td><input type="radio" name="socon2" value="7"></td>
+                            </tr>
+                            </table>
+                      </div>
+                    </div>
+                
+                    <div class="survey-section">
+                      <h3>Demographics</h3>
+                      <label>1. Have you ever owned stocks?</label>
+                      <input type="radio" name="demo1"> Yes<br>
+                      <input type="radio" name="demo1"> No<br>
+                
+                      <label>2. Do you currently own stocks?</label>
+                      <input type="radio" name="demo2"> Yes<br>
+                      <input type="radio" name="demo2"> No<br>
+                
+                      <label>3. Why don't people participate in the stock market?</label>
+                      <input type="radio" name="demo3"> Barrier to entry (Lack of money/resource)<br>
+                      <input type="radio" name="demo3"> Lack of interest<br>
+                      <input type="radio" name="demo3"> Distrust in financial systems<br>
+                      <input type="radio" name="demo3"> Negative experiences in stock market<br>
+                      <input type="radio" name="demo3" value="Other" onclick="toggleOtherInput(true)"> Other:
+                    <input type="text" id="demo3_other" name="demo3_other" oninput="document.querySelector('input[name=demo3][value=Other]').checked = true;"><br>
+                
+                      <label>4. Gender:</label>
+                      <input type="radio" name="demo4"> Male<br>
+                      <input type="radio" name="demo4"> Female<br>
+                      <input type="radio" name="demo4" value="Other" onclick="toggleOtherInput(true)"> Other:
+                      <input type="text" id="demo4_other" name="demo4_other" oninput="document.querySelector('input[name=demo4][value=Other]').checked = true;"><br>
+                  
+                      <label>5. Age:</label>
+                      <input type="number" name="age" min="0" max="100">
+                
+                      <label>6. Education:</label>
+                      <input type="radio" name="demo6"> High School or equivalent level<br>
+                      <input type="radio" name="demo6"> Bachelor's or equivalent level<br>
+                      <input type="radio" name="demo6"> Master's or equivalent level<br>
+                      <input type="radio" name="demo6"> Doctoral or equivalent level<br>
+                    </div>
+                  </form>
             </section>
             
             <section id="results-section" class="section">
-                <h2>Results</h2>
-                <p>Results content goes here...</p>
-            </section>
+                <style>
+                    #results-section h3, h4{
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    #results-section p{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 18px;
+                    }
+                </style>
+                <h2> Results</h2>
+                <h3>4.1 Individualism and Collectivism</h3>
+                <p>This study found a weak, statistically insignificant positive correlation (r = 0.088, p = 0.286) between individualism and collectivism, suggesting these constructs should be considered separate dimensions. Comparisons of collectivism across individualism groups and experimental conditions did not yield consistent or significant differences.</p>
+              
+                <h3>4.2 Treatment Effect</h3>
+                <p>The individualism-priming treatment had a modest effect (mean increase of 0.56) but was statistically insignificant (p = 0.255). Therefore, observed group differences cannot be conclusively attributed to the treatment, and subsequent analyses focused on the combined dataset.</p>
+              
+                <h3>4.3 Hypotheses Discussion</h3>
+              
+                <h4>4.3.1 Hypothesis 1: Individualism and Social Conformity</h4>
+                <p>No significant relationship was found between individualism and social conformity (r = 0.068, p = 0.408). Mean differences and regression analyses also indicated no statistically significant association. Thus, H1 is rejected.</p>
+              
+                <h4>4.3.2 Hypothesis 2: Individualism and Overconfidence and Optimism</h4>
+                <p>Significant positive correlations were found between individualism and both overconfidence (r = 0.173, p = 0.035) and optimism (r = 0.237, p = 0.004). OLS regressions showed that individualism significantly predicts both constructs, supporting H2.</p>
+              
+                <h4>4.3.3 Hypothesis 3: Individualism and Financial Literacy</h4>
+                <p>No statistically significant relationship was observed between individualism and financial literacy across all analyses (r = -0.025, p = 0.764). Results were inconsistent and thus H3 is rejected.</p>
+              
+                <h4>4.3.4 Hypothesis 4: Individualism and Trust</h4>
+                <p>Individualism was negatively associated with generalized trust (r = -0.201, p = 0.014) and positively with institutional trust (r = 0.218, p = 0.007). Due to these opposing effects, the composite trust score showed no significant relationship. Therefore, H4 is rejected.</p>
+              
+                <h4>4.3.5 Hypothesis 5: Individualism and Stock Market Participation</h4>
+                <p>Analyses indicated a modest but statistically inconclusive positive relationship between individualism and stock market participation (r = 0.121, p = 0.142). Logistic regression showed 85.89% higher odds of SMP in high-individualism participants (p = 0.07), but further regressions were not statistically significant. An instrumental variable regression yielded a significant result (p = 0.005), but it violated exogeneity assumptions. A mediation analysis revealed a total effect (TE) of 0.294, primarily mediated by overconfidence. However, results should be interpreted cautiously due to limitations in significance and methodology.</p>
+              
+                <p><strong>Conclusion:</strong> Only Hypothesis 2 was supported. Other hypotheses lacked statistical support or had conflicting relationships. Mediation analysis suggests overconfidence as the primary indirect pathway linking individualism and SMP.</p>
+              </section>
             
             <section id="discussion-section" class="section">
                 <h2>Discussion</h2>
-                <p>Discussion content goes here...</p>
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 18px;">
+    <p>This study encountered several limitations in its aim to understand the relationship between individualism and stock market participation (SMP), particularly due to insufficient statistical significance across many tested hypotheses. While the treatment intended to increase individualism did not yield statistically significant changes, some key findings still emerged.</p>
+
+    <p>There was clear evidence supporting the positive relationship between individualism and both overconfidence and optimism, aligning with prior research. Additionally, a nuanced relationship between individualism and trust was observed: individualism negatively correlated with generalized trust but positively with institutional trust. This contradicts some earlier studies suggesting that individualism broadens trust networks.</p>
+
+    <p>In contrast, no significant relationships were found between individualism and social conformity or financial literacy. These results contribute to ongoing debates and inconsistencies in the literature and suggest the need for larger samples or alternative measurement approaches to fully understand these links.</p>
+
+    <p>Regarding SMP, the study found a modest but statistically inconclusive positive relationship with individualism. Notably, mediation analysis revealed that most of the observed effect of individualism on SMP operates through overconfidence. This suggests that overconfidence may be a critical mechanism through which cultural traits like individualism influence financial behavior.</p>
+
+    <p>Several improvements are suggested for future research. First, increasing the sample size could help detect subtler effects. Second, simplifying or expanding variable measurements could improve precision. Third, replacing collectivism with more robust individualism measures might yield clearer insights. Finally, using continuous or behavioral measures of SMP (e.g., willingness to invest) could better capture how cultural traits influence investment behavior.</p>
+
+    <p>In summary, although the study faced methodological and statistical limitations, it highlights important pathways through which individualism may influence financial decision-making and lays a foundation for future, more conclusive research.</p>
+</div>
             </section>
             
             <section id="link-section" class="section">
